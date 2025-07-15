@@ -31,4 +31,19 @@ public class PageController {
         System.out.println("Services page accessed");
         return "services"; // This should return the name of the view for the services page
     }
+     @RequestMapping("/register")
+    public String register() {
+        System.out.println("Register page accessed");
+        return "register"; 
+    }
+     @RequestMapping("/login")
+    public String login() {
+        System.out.println("login page accessed");
+        return "login"; 
+    }
+     @RequestMapping("/contact")
+    public String contact() {
+        System.out.println("Contact page accessed");
+        return "contact"; 
+    }
 }

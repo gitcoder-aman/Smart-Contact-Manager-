@@ -1,29 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <title>Service page</title>
 </head>
 <body>
-    <h1>This is Services page.</h1>
-
-    <hr>
-    <!-- using fragment -->
-     <div class="host-tag" th:replace="~{base :: parent(~{::section})}">
-       
-        <section>
-            <h2>Dynamic Content</h2>
-            <hr>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam rerum eius dolor sequi consectetur voluptate deleniti molestias doloremque quo quam? Laborum sequi atque pariatur perferendis vel mollitia aliquam quas voluptatum.
-            
-            </p>
-            <button>
-                this is button
-            </button>
-        </section>
-
-     </div>
+    <section id ="content">
+        <h1>Welcome to Services page</h1>
+        <h2>Service offered by SCM.</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, deleniti magnam atque, eaque magni hic accusamus adipisci tenetur quibusdam qui, quaerat molestiae provident odit tempore porro veniam consequuntur possimus repellat.
+    </section>
+    <script>
+        console.log("Service page script loaded");
+    </script>
 </body>
 </html>
