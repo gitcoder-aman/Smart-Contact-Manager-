@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Services page.</h1>
+
+    <hr>
+    <!-- using fragment -->
+     <div class="host-tag" th:replace="~{base :: parent(~{::section})}">
+       
+        <section>
+            <h2>Dynamic Content</h2>
+            <hr>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam rerum eius dolor sequi consectetur voluptate deleniti molestias doloremque quo quam? Laborum sequi atque pariatur perferendis vel mollitia aliquam quas voluptatum.
+            
+            </p>
+            <button>
+                this is button
+            </button>
+        </section>
+
+     </div>
+</body>
+</html>
